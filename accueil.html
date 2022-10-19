@@ -5,24 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Actipognon</title>
+    <title>Actipognon : Home</title>
 </head>
 <body>
     <header>
         <div>
-            <h1 class="logo">ACTIPOGNON</h1> <!--mettre un a logo-->
+            <a href="./accueil.html">
+                <img src="./image/Actipognon.png">
+            </a>
             <nav class="navBar">
                 <ul class="menu" id="menu">
-                    <li class="jeux">Jeux</li>
-                    <li class="boutique">Boutique</li>
-                    <li class="apropos">A propos</li>
-                    <li class="support">Support</li>
+                    <li class="jeux"><a href="./jeux.html">Jeux</a></li>
+                    <li class="boutique">Boutique<select></select></li> <!--menu select ./formulaire.html-->
+                    <li class="apropos">A propos<select></select></li> <!--menu select ./apropos.html-->
+                    <li class="support">Support</li><!--menu select ./formulaireContact.html-->
                 </ul>
             </nav>
         </div>
     </header>
+    <div class="bestGame">
+        <h2>Nos plus grandes créations</h2>
+        <div class="arrayGame">
+            <div class="game">
+                <p>Call of duty Wargame 1</p>
+            </div>
+            <div class="game">
+                <p>Call of duty Wargame 2</p>
+            </div>
+            <div class="game">
+                <p>Call of duty Wargame 3</p>
+            </div>
+        </div>
+    </div>
+    <div class="bestArticle">
+        <h2>Nos meilleurs articles</h2>
+        <div class="arrayArticle">
+            <div class="article">
+                <p>article 1</p>
+            </div>
+            <div class="article">
+                <p>article 2</p>
+            </div>
+            <div class="article">
+                <p>article 3</p>
+            </div>
+        </div>
+    </div>
     <footer>
-
+        <div class="logoRS">
+            <h3>Suivez-nous</h3>
+            <ul>
+                <li class="facebook" id="facebook">
+                    <a href="https://fr-fr.facebook.com/Activision/">facebook</a>
+                </li> <!--mettre logo-->
+                <li class="twitter" id="twitter">
+                    <a href="https://twitter.com/activision">twitter</a>
+                </li> <!--mettre logo-->
+                <li class="youtube" id="youtube">
+                    <a href="https://www.youtube.com/c/CallofDuty">youtube</a>
+                </li> <!--mettre logo-->
+            </ul>
+        </div>
+        <a href="./accueil.html">
+            <img src="./image/Actipognon.png">
+        </a>
     </footer>
 </body>
 </html>
