@@ -12,7 +12,16 @@ ul{
     list-style: none;
 }
 
-header{
+#hautPage
+{
+	display: flex;
+	align-items: flex-end;
+}
+
+.navBar{
+    justify-content: start;
+}
+
+nav ul{
     display: flex;
-    
 }
