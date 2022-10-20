@@ -25,3 +25,11 @@ ul{
 nav ul{
     display: flex;
 }
+/* Rien nav ul ? */ 
+
+#basPage{
+    display: flex;
+    align-items: flex-end;
+}
+
+/* Mettre les logo en ligne et pas en colonne */ 
