@@ -1,86 +1,77 @@
-*{
-    box-sizing: border-box;
-}
-
-body{
+body {
     background-color: #545454;
     color: white;
-    margin: 5px 10px 5px 10px;
+    margin: 5px 0px 5px 0px;
 }
 
-a{
+a {
     color: white;
     text-decoration: none;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
-#hautPage
-{
+#hautPage {
 	display: flex;
 	align-items: flex-end;
 }
 
-.navbar #menu{
+.navbar #menu {
     display: flex;
     height: 50px;
     font-size: 25px;
 }
 
-.jeux, .boutique, .apropos, .support{
+header {
+    border-bottom: 1px solid black;
+}
+
+header li a {
+    display: block; /*permet saut de ligne de chaque li du menu dépliant*/
+    padding: 20px 40px 20px 40px;
+    background-color: green;
+}
+
+header li a:hover {
+    background-color: blue;
+}
+
+header li:hover .sub-menu {
+    display: block; /*permet d'afficher le menu en survolant*/
+}
+
+.sub-menu {
+    display: none; /*rend invisible*/
+    position: absolute; /*permet de le sortir de l'ordre html et donc de pas prendre de l'espace*/
+    text-align: centr;
+    margin-left: -40px;
+    width: 300px;
+}
+
+.sub-menu li {
+    display: block;
+}
+
+.jeux, .apropos, .support {
     margin-right: 55px;
 }
 
-.boutique{
-    cursor: pointer;
-    width: 90px;
+.apropos, .support {
+    padding-left: 320px;
 }
 
-.select{
-    position: absolute; /*permet de le sortir de l'ordre html et donc de pas prendre de l'espace*/
-    opacity: 0; /*rend invisible*/
-    margin-top: 10px;
-    width: 200px;
-    height: 40px;
-    text-align: center; 
-    padding-top: 10px;
+footer {
+    border-top: 1px solid black;
 }
 
-.boutique:hover > .select{
-    opacity: 1;
+.logo img {
+    position: relative;
+    height: 100px;
 }
 
-.select:hover{
-    background-color: #414141;
-}
-
-.boutique:hover > .opt2{
-    margin-top: 50px;
-}
-
-.boutique:hover > .opt3{
-    margin-top: 90px;
-}
-
-.apropos{
-    cursor: pointer;
-}
-
-.apropos:hover > .select{
-    opacity: 1;
-}
-
-.apropos:hover > .opt2{
-    margin-top: 50px;
-}
-
-#basPage{
+#basPage {
     display: flex;
     align-items: flex-end;
 }
-
-/*.navBar{              inutile pour le moment
-    justify-content: flex-start;  cela ne sert à rien car c'est par défaut en flex start
-}*/
