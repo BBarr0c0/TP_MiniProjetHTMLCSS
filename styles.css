@@ -1,5 +1,5 @@
 body {
-    background-color: #545454;
+    background-color: #303030;
     color: white;
     margin: 5px 0px 5px 0px;
 }
@@ -13,9 +13,21 @@ ul {
     list-style: none;
 }
 
+/*-------------En tête------------*/
+
+header {
+    border-bottom: 1px solid black;
+    background-color: #545454;
+    width: 100%;
+}
+
 #hautPage {
 	display: flex;
-	align-items: flex-end;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    top: -10px;
+    width: 100%;
 }
 
 .navbar #menu {
@@ -24,14 +36,19 @@ ul {
     font-size: 25px;
 }
 
-header {
-    border-bottom: 1px solid black;
+h1{
+    margin-left: 50px;
+    width: 500px;
+    text-align: center;
+    font-size: 15px;
 }
 
 header li a {
     display: block; /*permet saut de ligne de chaque li du menu dépliant*/
     padding: 20px 40px 20px 40px;
     background-color: green;
+    width: 100px;
+    text-align: center;
 }
 
 header li a:hover {
@@ -45,7 +62,7 @@ header li:hover .sub-menu {
 .sub-menu {
     display: none; /*rend invisible*/
     position: absolute; /*permet de le sortir de l'ordre html et donc de pas prendre de l'espace*/
-    text-align: centr;
+    text-align: center;
     margin-left: -40px;
     width: 300px;
 }
@@ -55,12 +72,46 @@ header li:hover .sub-menu {
 }
 
 .jeux, .apropos, .support {
-    margin-right: 55px;
+    margin-right: 15px;
 }
 
-.apropos, .support {
-    padding-left: 320px;
+/*------------Main------------*/
+
+.main {
+    margin-top: 40px;
 }
+
+h2 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+.video { /*width="560" height="315"*/
+    display: flex;
+    position: relatie;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+.videoplay {
+    position: block;
+    width: 100%;
+    height: 1000px;
+}
+
+.bestGame {
+    position: block;
+}
+
+.bestArticle {
+    position: block;
+}
+
+/*--------Bas de page---------*/
 
 footer {
     border-top: 1px solid black;
@@ -69,9 +120,20 @@ footer {
 .logo img {
     position: relative;
     height: 100px;
+    top: 10px;
 }
 
 #basPage {
     display: flex;
     align-items: flex-end;
+    justify-content: space-between;
+}
+
+.logoRS > .icon {
+    display: flex;
+    flex-direction: row;
+}
+
+.icon > li{
+    margin-right: 15px;
 }
