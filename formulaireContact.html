@@ -8,6 +8,45 @@
     <title>Actipognon : Contact</title>
 </head>
 <body>
-    
+    <!--Le formulaire pour le support-->
+    <form method="post" action="monProgramme.php">
+        <fieldset>
+            <legend>Infos personnelles</legend>
+            <label for="prenom">Prénom:</label>
+            <input type="text" name="prenom" placeholder="Ex: Antoine" id="prenom" required><br>
+            <label for="nom">Nom:</label>
+            <input type="text" name="nom" placeholder="Ex: Dupont" id="nom" required><br>
+            <label for="email">E-mail</label>
+            <input type="email" placeholder="Ex: Antoine.Dupont@hotmail.fr" id="email" required><br>
+            <label for="tel">Téléphone:</label>
+            <input type="tel" name="tel" placeholder="Ex: 06 65 xx xx xx" id="tel" required><br>
+            <label for="pseudo">Pseudo du compte Actipognon:</label>
+            <input type="text" name="pseudo" id="pseudo" minlength="2" maxlength="20" required><br>
+            <p>Nous avons besoin d'une pièce d'identité pour confirmer que vous êtes bien le propriétaire du compte</p>
+            <label for="identite">Ma pièce d'identité:</label>
+            <input type="file" accept=".png, .jpg" name="identite" id="identite">
+        </fieldset>
+        <fieldset>
+            <legend>Ticket support</legend>
+            <label for="listeProbleme">Quel est votre problème ?</label>
+            <select name="listeProbleme" id="listeProbleme">
+                <optgroup label="Problème de compte">
+                    <option value="Problème de compte">Je n'arrive pas à me connecter</option>
+                    <option value="Problème de compte">Mon compte est bloqué</option>
+                    <option value="Problème de compte">Le jeu ne se lance pas</option>
+                </optgroup>
+                <optgroup label="Problème sur la boutique">
+                    <option value="Problème sur la boutique">Je veux me faire rembourser</option>
+                    <option value="Problème sur la boutique">Mon achat est refusé</option>
+                    <option value="Problème sur la boutique">Je n'ai pas reçu mon achat</option>
+                </optgroup>
+            </select><br>
+            <label for="Commentaire">Expliquez en détail votre problème:</label><br>
+            <textarea cols="70" rows="10"></textarea>
+        </fieldset>
+        <input type="submit" value="Envoyer">
+        <input type="reset" value="Reset">
+    </form>
+    <!--Fin du formulaire-->
 </body>
 </html>
