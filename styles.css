@@ -1,6 +1,11 @@
+*{
+    box-sizing: border-box;
+}
+
 body{
     background-color: #545454;
     color: white;
+    margin: 5px 10px 5px 10px;
 }
 
 a{
@@ -18,10 +23,64 @@ ul{
 	align-items: flex-end;
 }
 
-.navBar{
-    justify-content: start;
+.navbar #menu{
+    display: flex;
+    height: 50px;
+    font-size: 25px;
 }
 
-nav ul{
-    display: flex;
+.jeux, .boutique, .apropos, .support{
+    margin-right: 55px;
 }
+
+.boutique{
+    cursor: pointer;
+    width: 90px;
+}
+
+.select{
+    position: absolute; /*permet de le sortir de l'ordre html et donc de pas prendre de l'espace*/
+    opacity: 0; /*rend invisible*/
+    margin-top: 10px;
+    width: 200px;
+    height: 40px;
+    text-align: center; 
+    padding-top: 10px;
+}
+
+.boutique:hover > .select{
+    opacity: 1;
+}
+
+.select:hover{
+    background-color: #414141;
+}
+
+.boutique:hover > .opt2{
+    margin-top: 50px;
+}
+
+.boutique:hover > .opt3{
+    margin-top: 90px;
+}
+
+.apropos{
+    cursor: pointer;
+}
+
+.apropos:hover > .select{
+    opacity: 1;
+}
+
+.apropos:hover > .opt2{
+    margin-top: 50px;
+}
+
+#basPage{
+    display: flex;
+    align-items: flex-end;
+}
+
+/*.navBar{              inutile pour le moment
+    justify-content: flex-start;  cela ne sert à rien car c'est par défaut en flex start
+}*/
