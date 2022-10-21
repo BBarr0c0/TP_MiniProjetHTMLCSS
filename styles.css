@@ -212,6 +212,10 @@ h3 + .logo img {
 
 /*-------Page Jeux-------*/ 
 
+section{
+    margin-top: 100px;
+}
+
 #article1{
     border: 2px green solid;
     background-color: #303030;
@@ -288,4 +292,8 @@ h3 + .logo img {
 
 .pIdentite{
     text-align: left;
+}
+
+form{
+    margin-top: 100px;
 }
