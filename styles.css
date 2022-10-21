@@ -192,23 +192,50 @@ h3 + .logo img {
     display: flex;
     margin-top: 100px;
     justify-content: center;
+    flex-direction: column;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .deNous {
     text-align: center;
-    width: 1000px;
 }
 
 .deNous > p {
-    align-self: right;
+    justify-self: center;
+    text-align: start;
 }
 
 .histoire {
     text-align: center;
 }
 
+.histoire > p {
+    justify-self: center;
+    text-align: start;
+}
+
+aside {
+    display: inline-block;
+    width: 20%;
+    padding-left: .5rem;
+    margin-left: .5rem;
+    box-shadow: inset 5px 0 5px -5px #ccfa00;
+    font-style: italic;
+    color: #ccfa00;
+}
+
+.values {
+    text-align: center;
+}
+
 .presentation {
     text-align: center;
+}
+
+.imgbj {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
 }
 
 /*-------Page Jeux-------*/ 
