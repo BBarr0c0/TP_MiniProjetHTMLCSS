@@ -137,9 +137,13 @@ p {
     margin-top: 300px;
 }
 
+.bestArticle > h2 {
+    margin-bottom: -100px;
+}
+
 .arrayArticle {
     display: grid;
-    grid-template-columns: repeat(3,500px);
+    grid-template-columns: repeat(3,1fr);
     grid-template-rows: 1fr;
     text-align: center;
     justify-content: center;
