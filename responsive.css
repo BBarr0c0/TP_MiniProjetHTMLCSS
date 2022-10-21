@@ -1,4 +1,46 @@
-@media only screen and (max-width: 1024px){
+@media only screen and (max-width: 1080px)
+{
+    h1 {
+        display: none;
+    }
+    #hautPage > .logo{
+        display: none;   /* !!! TEMPORAIRE  A REMPLACER AVEC BURGER-MENU !!! */
+    }
+    .navbar #menu {
+        font-size: 15px;  /* !!! TEMPORAIRE A REMPLACER AVEC BURGER-MENU !!! */
+    }
+    .menu a {
+        padding: 5px 20px 50px 5px;  /* !!! TEMPORAIRE A REMPLACER AVEC BURGER-MENU !!! */
+        margin-right: auto;
+    }
+    #menu {
+        margin-left: -30px;    /* !!! TEMPORAIRE A REMPLACER AVEC BURGER-MENU !!! */
+    }
+    #basPage {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .logoRS > .icon {
+        display: flex;
+        flex-direction: column;
+    }
+    .icon > li{
+        margin-left: -40px;
+    }
+    .actifoot {
+        font-size: 10px;
+        justify-self: end;
+        align-self: flex-end;
+        margin-right: -100px;
+    }
+    .actifoot + .logo img{
+        display: flex;
+        width: 200px;
+        /*transform: rotate(90deg);*/
+    }
+    /*------jeux.html------*/
+
     article{
         display: flex;
         flex-direction: column;

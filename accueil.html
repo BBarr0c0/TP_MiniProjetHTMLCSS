@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" media="screen and (max-width: 1024px)" href="responsive.css" />
     <title>Actipognon : Home</title>
 </head>
 <body>
@@ -13,7 +14,7 @@
         <div id="hautPage">
             <div class="logo">
                 <a href="./accueil.html">
-                    <img src="./image/Actipognon.png" alt="Bonhomme qui marche avec un gros sac plein de pognon" title="POGNON !">
+                    <img src="./image/Actipognon.png" alt="Bonhomme qui marche avec un gros sac plein de pognon" title="Accueil">
                 </a>
             </div>
             <h1>"Toujours là pour prendre votre pognon"</h1>
@@ -23,13 +24,13 @@
                         <a href="./jeux.html">Jeux</a>
                         <ul class="sub-menu">
                             <li class="select opt1">
-                            <a href="https://www.callofduty.com/fr/modernwarfare2">Modern warfare 2</a>
+                            <a href="https://www.callofduty.com/fr/modernwarfare2" target="_blank">Modern warfare 2</a>
                             </li>
                             <li class="select opt2">
-                            <a href="https://www.callofduty.com/fr/modernwarfare2">Vanguard</a>
+                            <a href="https://www.callofduty.com/fr/vanguard" target="_blank">Vanguard</a>
                             </li>
                             <li class="select opt3">
-                            <a href="https://www.callofduty.com/fr/modernwarfare2">Cold war</a>
+                            <a href="https://www.callofduty.com/fr/blackopscoldwar" target="_blank">Cold war</a>
                             </li>
                         </ul>
                     </li>
@@ -47,23 +48,23 @@
         <h2>Précommander notre nouvelle usine à biftons :</h2>
         <p><a href="https://store.steampowered.com/app/1938090/Call_of_Duty_Modern_Warfare_II/" target="_blank">Call of Duty: Modern Warfare II</a></p>
         <div class="video">
-            <iframe class="videoplay" height="315" width="560" src="https://www.youtube.com/embed/r72GP1PIZa0?playlist=r72GP1PIZa0&loop=1&autoplay=1&mute=1&controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="videoplay" src="https://www.youtube.com/embed/r72GP1PIZa0?playlist=r72GP1PIZa0&loop=1&autoplay=1&mute=1&controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="bestGame">
             <h2>Nos dernières arnaques :</h2>
             <div class="arrayGame">
                 <div class="game1">
-                    <a href="./jeux.html">
+                    <a href="./jeux.html#article1"> <!--très fier d'avoir fait un lien avec ancrage-->
                         <img src="./image/mw2.jpg">
                     </a>
                 </div>
                 <div class="game2">
-                    <a href="./jeux.html">
+                    <a href="./jeux.html#article2">
                         <img src="./image/vanguard.jpg">
                     </a>
                 </div>
                 <div class="game3">
-                    <a href="./jeux.html">
+                    <a href="./jeux.html#article3">
                         <img src="./image/mobile.jpg">
                     </a>
                 </div>
@@ -84,23 +85,23 @@
                 </div>
             </div>
         </div>
-        <article class="bestArticle">
+        <section class="bestArticle">
             <h2>Nos meilleurs articles :</h2>
-            <section class="arrayArticle">
-                <section class="art1">
-                    <h3>Pourquoi autant de bugs ?</h3>
+            <div class="arrayArticle">
+                <article class="art1">
+                    <h3>Votre argent, c'est notre argent</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis perspiciatis excepturi inventore nemo labore! Eos consequatur sapiente, earum, amet minus natus omnis necessitatibus soluta qui, nisi est magni dignissimos quis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro laborum ratione nemo beatae? Adipisci ratione magni, vel quisquam incidunt repellendus? Laborum libero dicta aspernatur voluptas assumenda asperiores sequi quasi dolor!</p>
-                </section>
-                <section class="art2">
+                </article>
+                <article class="art2">
                     <h3>Nos microtransaction, notre plus grande fierté</h3>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro laborum ratione nemo beatae? Adipisci ratione magni, vel quisquam incidunt repellendus? Laborum libero dicta aspernatur voluptas assumenda asperiores sequi quasi dolor! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro laborum ratione nemo beatae? Adipisci ratione magni, vel quisquam incidunt repellendus? Laborum libero dicta aspernatur voluptas assumenda asperiores sequi quasi dolor!</p>
-                </section>
-                <section class="art3">
+                </article>
+                <article class="art3">
                     <h3>Qu'es ce que ça fait d'être riche ?</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi dolore omnis tempora. Et vitae id nisi error libero, repellendus ipsum iure ducimus corrupti fuga, molestias accusamus iste optio totam ex. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro laborum ratione nemo beatae? Adipisci ratione magni, vel quisquam incidunt repellendus? Laborum libero dicta aspernatur voluptas assumenda asperiores sequi quasi dolor!</p>
-                </section>
+                </article>
             </div>
-        </article>
+        </section>
     </div>
     <footer>
         <div id="basPage">
@@ -124,10 +125,10 @@
                     </li> 
                 </ul>
             </div>
-            <h3>Actipognon Corp. tout le pognon est réservé (par Jonathan et Boris)</h3>
+            <h3 class="actifoot">Actipognon Corp. tout le pognon est réservé (par Jonathan et Boris)</h3>
             <div class="logo">
                 <a href="./accueil.html">
-                    <img src="./image/Actipognon.png" alt="Bonhomme qui marche avec un gros sac plein de pognon" title="POGNON !">
+                    <img src="./image/Actipognon.png" alt="Bonhomme qui marche avec un gros sac plein de pognon" title="Accueil">
                 </a>
             </div>
         </div>
