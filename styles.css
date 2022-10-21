@@ -147,7 +147,6 @@ h3 + .logo img {
 
 #article1{
     border: 2px green solid;
-    background-color: lightgray;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 2fr 1fr;
@@ -171,7 +170,6 @@ h3 + .logo img {
 
 #article2{
     border: 2px green solid;
-    background-color: lightgray;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 2fr 1fr;
@@ -195,7 +193,6 @@ h3 + .logo img {
 
 #article3{
     border: 2px green solid;
-    background-color: lightgray;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 2fr 1fr;
@@ -215,4 +212,10 @@ h3 + .logo img {
 #photo3{
     grid-column: 2;
     justify-self: center;
+}
+
+/* Formulaire de contact*/
+
+.pIdentite{
+    text-align: left;
 }
