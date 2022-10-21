@@ -112,13 +112,11 @@ p {
 }
 
 .bestGame {
-    position: block;
+    position: block; /*ne sert à rien ?*/
 }
 
 .arrayGame {
     display: grid;
-    width: 2000px;
-    height: 500px;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: 1fr 1fr;
 }
@@ -141,8 +139,6 @@ p {
 
 .arrayArticle {
     display: grid;
-    width: 2000px;
-    height: auto;
     grid-template-columns: repeat(3,500px);
     grid-template-rows: 1fr;
     text-align: center;
@@ -159,6 +155,7 @@ p {
 footer {
     border-top: 1px solid black;
     background-color: #545454;
+    width: 100%;
 }
 
 .logo img {
