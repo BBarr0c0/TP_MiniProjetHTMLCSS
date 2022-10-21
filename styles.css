@@ -283,3 +283,9 @@ h3 + .logo img {
     grid-column: 2;
     justify-self: center;
 }
+
+/* Formulaire de contact*/
+
+.pIdentite{
+    text-align: left;
+}
