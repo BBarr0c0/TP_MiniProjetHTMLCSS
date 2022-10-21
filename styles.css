@@ -1,12 +1,16 @@
 body {
     background-color: #303030;
-    color: white;
+    color: rgb(201, 201, 201);
     margin: 5px 0px 5px 0px;
 }
 
 a {
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
+}
+
+a:hover {
+    
 }
 
 ul {
@@ -41,13 +45,18 @@ header {
     z-index: 999;
 }
 
-h1{
+h1 {
     position: relative;
     margin-left: 50px;
     width: 500px;
     text-align: center;
     font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     top: 20px;
+}
+
+h1:hover {
+    color:#fffb00;
 }
 
 header li a {
@@ -61,6 +70,8 @@ header li a {
 header li a:hover {
     background-color: #545454;
     color: rgb(0, 255, 0);
+    box-shadow: 1px 10px 10px rgb(0, 0, 0);
+    border-top: 1px solid rgb(53, 53, 53);
 }
 
 header li:hover .sub-menu {
