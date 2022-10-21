@@ -53,13 +53,14 @@ h1{
 header li a {
     display: block; /*permet saut de ligne de chaque li du menu dépliant*/
     padding: 20px 40px 20px 40px;
-    background-color: green;
+    background-color: #545454;
     width: 100px;
     text-align: center;
 }
 
 header li a:hover {
-    background-color: blue;
+    background-color: #545454;
+    color: rgb(0, 255, 0);
 }
 
 header li:hover .sub-menu {
