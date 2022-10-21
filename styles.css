@@ -9,10 +9,6 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    
-}
-
 ul {
     list-style: none;
 }
@@ -59,22 +55,22 @@ h1:hover {
     color:#fffb00;
 }
 
-header li a {
-    display: block; /*permet saut de ligne de chaque li du menu dépliant*/
+.menu a { /*anciennement header li a*/
+    display: block;
     padding: 20px 40px 20px 40px;
     background-color: #545454;
     width: 100px;
     text-align: center;
 }
 
-header li a:hover {
+.menu a:hover { /*anciennement header li a:hover*/
     background-color: #545454;
     color: rgb(0, 255, 0);
     box-shadow: 1px 10px 10px rgb(0, 0, 0);
     border-top: 1px solid rgb(53, 53, 53);
 }
 
-header li:hover .sub-menu {
+.menu li:hover .sub-menu {
     display: block; /*permet d'afficher le menu en survolant*/
 }
 
