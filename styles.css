@@ -19,6 +19,7 @@ header {
     border-bottom: 1px solid black;
     background-color: #545454;
     width: 100%;
+    z-index: 999;
 }
 
 #hautPage {
@@ -28,19 +29,25 @@ header {
     justify-content: space-between;
     top: -10px;
     width: 100%;
+    position: fixed;
+    z-index: 999;
+    background-color: #545454;
 }
 
 .navbar #menu {
     display: flex;
     height: 50px;
     font-size: 25px;
+    z-index: 999;
 }
 
 h1{
+    position: relative;
     margin-left: 50px;
     width: 500px;
     text-align: center;
-    font-size: 15px;
+    font-size: 25px;
+    top: 20px;
 }
 
 header li a {
@@ -78,7 +85,7 @@ header li:hover .sub-menu {
 /*------------Main------------*/
 
 .main {
-    margin-top: 40px;
+    margin-top: 200px;
 }
 
 h2 {
@@ -91,10 +98,11 @@ p {
 
 .video { /*width="560" height="315"*/
     display: flex;
-    position: relatie;
+    position: relative;
     width: 100%;
     text-align: center;
     justify-content: center;
+    z-index: -1; /*calc permettant au menu déroulant de s'afficher par dessus la vidéo*/
 }
 
 .videoplay {
@@ -107,8 +115,43 @@ p {
     position: block;
 }
 
+.arrayGame {
+    display: grid;
+    width: 2000px;
+    height: 500px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr 1fr;
+}
+
+.arrayGame > div {
+    justify-self: center;
+    margin-top: 50px;
+    object-fit: fill; /*nos codeurs n'ont pu utiliser cette fonctionnalité pls help join us !*/
+}
+
+.arrayGame > div img { /*pour size les images*/
+    width: 300px;
+    height: 300px;
+}
+
 .bestArticle {
-    position: block;
+    position: relative;
+    margin-top: 300px;
+}
+
+.arrayArticle {
+    display: grid;
+    width: 2000px;
+    height: auto;
+    grid-template-columns: repeat(3,500px);
+    grid-template-rows: 1fr;
+    text-align: center;
+    justify-content: center;
+}
+
+.arrayArticle > section {
+    margin-right: 100px;
+    border: 1px black solid;
 }
 
 /*--------Footer---------*/
@@ -121,7 +164,6 @@ footer {
 .logo img {
     position: relative;
     height: 100px;
-    top: 10px;
 }
 
 h3 + .logo img {
@@ -143,11 +185,36 @@ h3 + .logo img {
     margin-right: 15px;
 }
 
+/*-------A PROPOS-------*/
+
+.propos {
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+}
+
+.deNous {
+    text-align: center;
+    width: 1000px;
+}
+
+.deNous > p {
+    align-self: right;
+}
+
+.histoire {
+    text-align: center;
+}
+
+.presentation {
+    text-align: center;
+}
+
 /*-------Page Jeux-------*/ 
 
 #article1{
     border: 2px green solid;
-    background-color: lightgray;
+    background-color: #303030;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 2fr 1fr;
@@ -171,7 +238,7 @@ h3 + .logo img {
 
 #article2{
     border: 2px green solid;
-    background-color: lightgray;
+    background-color: #303030;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 2fr 1fr;
@@ -195,7 +262,7 @@ h3 + .logo img {
 
 #article3{
     border: 2px green solid;
-    background-color: lightgray;
+    background-color: #303030;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 2fr 1fr;
