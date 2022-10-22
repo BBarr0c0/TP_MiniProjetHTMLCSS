@@ -1,6 +1,15 @@
+:root{
+    --headfooter-color: #545454;
+    --callof-color: rgb(0, 255, 0);
+    --pognon-color: #fffb00;
+    --general-color: #303030;
+    --nuancegeneral--color: #3a3a3a;
+    --police-color: rgb(205, 205, 205);
+}
+
 body {
-    background-color: #303030;
-    color: rgb(201, 201, 201);
+    background-color: var(--general-color);
+    color: var(--police-color);
     margin: 5px 0px 5px 0px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -18,13 +27,12 @@ ul {
 
 #hautPage {
 	display: flex;
-    /*position: relative;  ne sert plus a rien ?*/
     align-items: center; /*centre les éléments quand navbar grossit*/
     justify-content: space-between;
     top: -10px;
     width: 100%;
     position: fixed;
-    background-color: #545454;
+    background-color: var(--headfooter-color);
     box-shadow: 15px 15px 50px black;
     z-index: 999; /*calc permettant d'afficher la navbar par dessus les autres éléments*/
 }
@@ -34,7 +42,7 @@ ul {
 }
 
 .navbar .menu {
-    display: flex;  /*mets les onglets en ligne display: flex;*/
+    display: flex;  /*mets les onglets en ligne*/
     height: 60px;
     font-size: 25px;  
 }
@@ -46,29 +54,30 @@ h1 {
     text-align: center;
     font-size: 25px;
     top: 20px;
+    animation: devise 10s ease infinite;
 }
 
 h1:hover {
-    color:#fffb00;
-    text-shadow: 5px 5px 25px #fffb00;
+    color:var(--pognon-color);
+    text-shadow: 5px 5px 25px var(--pognon-color);
 }
 
-.menu a { /*anciennement header li a*/
+.menu a {
     display: block;
     padding: 20px 40px 20px 40px;
-    background-color: #545454;
+    background-color: var(--headfooter-color);
     width: 60%;
     text-align: center;
     white-space: nowrap; /*empêcher retour ligne du menu (a propos était problématique)*/
     margin-right: 100px;
 }
 
-.menu a:hover { /*anciennement header li a:hover*/
-    background-color: #545454;
-    color: rgb(0, 255, 0);
+.menu a:hover {
+    background-color: var(--headfooter-color);
+    color: var(--callof-color);
     box-shadow: -10px 10px 15px rgb(0, 0, 0);
     border-top: 1px solid rgb(53, 53, 53);
-    text-shadow: 5px 5px 25px rgb(0, 255, 0);
+    text-shadow: 5px 5px 25px var(--callof-color);
 }
 
 .menu li:hover .sub-menu {
@@ -91,6 +100,21 @@ h1:hover {
     margin-right: 15px;
 }
 
+nav label {
+    background-color: var(--headfooter-color);
+    color: white;
+    font-size: 50px;
+  }
+
+nav label:hover {
+    box-shadow: 1px 1px 5px rgb(231, 231, 231);
+}
+
+nav label,
+nav input {
+  display: none;
+}
+
 /*------------Main------------*/
 
 .main {
@@ -106,6 +130,9 @@ p {
     text-align: center;
 }
 
+.main > h2:first-child {
+    text-decoration: underline;
+}
 .precoLastGame > a {
     font-size: 50px;
     color:rgb(255, 255, 255);
@@ -113,8 +140,8 @@ p {
 }
 
 .precoLastGame > a:hover {
-    color: rgb(0, 255, 0);
-    text-shadow: 5px 5px 25px rgb(0, 255, 0);
+    color: var(--callof-color);
+    text-shadow: 5px 5px 25px var(--callof-color);
 }
 
 .video {
@@ -133,8 +160,9 @@ p {
 }
 
 .bestGame {
-    /*display: block; ne sert à rien ?*/
     margin-top: 100px;
+    padding: 100px 0;
+    background-color: var(--nuancegeneral--color);
 }
 
 .arrayGame {
@@ -146,7 +174,6 @@ p {
 .arrayGame > div {
     justify-self: center;
     margin-top: 50px;
-    object-fit: fill; /*nos codeurs n'ont pu utiliser cette fonctionnalité pls help join us !*/
 }
 
 .arrayGame > div img { /*pour size les images*/
@@ -154,8 +181,8 @@ p {
     height: 300px;
 }
 
-.arrayGame + div a:hover {
-    text-shadow: 5px 5px 25px rgb(0, 255, 0);
+.game a > img:hover {
+    box-shadow: 10px 10px 50px var(--callof-color);
 }
 
 .bestArticle {
@@ -179,6 +206,7 @@ p {
     margin-right: 100px;
     margin-left: 100px;
     border: 1px black solid;
+    padding: 20px;
 }
 
 .art > p {
@@ -189,7 +217,7 @@ p {
 
 footer {
     border-top: 1px solid black;
-    background-color: #545454;
+    background-color: var(--headfooter-color);
     width: 100%;
 }
 
@@ -367,8 +395,8 @@ section{
 }
 
 .lienBoutique{
-    color: rgb(0, 255, 0);
-    text-shadow: 5px 5px 25px rgb(0, 255, 0);
+    color: var(--callof-color);
+    text-shadow: 5px 5px 25px var(--callof-color);
 }
 
 /* Formulaire de contact*/
@@ -394,4 +422,25 @@ fieldset > p{
     color: red;
     justify-content: center;
     align-items: center;
+}
+
+/*-----ANIMATION------*/
+
+@keyframes devise {
+    0% {
+        color: var(--police-color);
+        text-shadow: 1px 1px 10px var(--police-color);
+    }
+    25% {
+        color: var(--pognon-color);
+        text-shadow: 1px 1px 10px var(--pognon-color);
+    }
+    50% {
+        color: var(--pognon-color);
+        text-shadow: 1px 1px 10px var(--pognon-color);
+    }
+    75% {
+        color: var(--police-color);
+        text-shadow: 1px 1px 10px var(--police-color);
+    }
 }
