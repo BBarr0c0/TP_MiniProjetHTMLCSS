@@ -133,6 +133,11 @@
     .arrayGame {
         grid-template-columns: 1fr;
     }
+
+    textarea{
+        resize:both
+    }
+
     .arrayArticle > article {
         width: 50%;
         justify-self: center;
