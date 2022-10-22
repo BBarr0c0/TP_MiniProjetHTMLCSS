@@ -1,7 +1,6 @@
 @media only screen and (max-width: 1400px)
 {
     h1 {
-       text-align: lef; 
        font-size: 15px;
        top: 0px;
     }
@@ -29,6 +28,9 @@
     }
     #menu {
         margin-left: -30px;    /* !!! TEMPORAIRE A REMPLACER AVEC BURGER-MENU !!! */
+    }
+    .arrayGame {
+        grid-template-columns: repeat(2,1fr);
     }
     #basPage {
         display: flex;
@@ -74,5 +76,12 @@
     #article3{
         display: flex;
         flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 800px) 
+{
+    .arrayGame {
+        grid-template-columns: 1fr;
     }
 }
