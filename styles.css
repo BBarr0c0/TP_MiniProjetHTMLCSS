@@ -281,10 +281,12 @@ section{
     grid-template-rows: 1fr 2fr 1fr;
 }
 
-#titre1{
+.titreBoutique{
     grid-column: 1 /span 2;
     grid-row: 1;
     justify-self: center;
+    font-weight: bold;
+    font-size: 1.5em;
 }
 
 #description1{
@@ -305,12 +307,6 @@ section{
     grid-template-rows: 1fr 2fr 1fr;
 }
 
-#titre2{
-    grid-column: 1 /span 2;
-    grid-row: 1;
-    justify-self: center;
-}
-
 #description2{
     grid-column: 2;
     grid-row: 2;
@@ -329,12 +325,6 @@ section{
     grid-template-rows: 1fr 2fr 1fr;
 }
 
-#titre3{
-    grid-column: 1 /span 2;
-    grid-row: 1;
-    justify-self: center;
-}
-
 #description3{
     grid-column: 1;
     grid-row: 2;
@@ -343,6 +333,11 @@ section{
 #photo3{
     grid-column: 2;
     justify-self: center;
+}
+
+.lienBoutique{
+    color: rgb(0, 255, 0);
+    text-shadow: 5px 5px 25px rgb(0, 255, 0);
 }
 
 /* Formulaire de contact*/
