@@ -176,6 +176,7 @@ p {
 
 .arrayArticle > article {
     margin-right: 100px;
+    margin-left: 100px;
     border: 1px black solid;
 }
 

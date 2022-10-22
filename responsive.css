@@ -4,6 +4,13 @@
        font-size: 15px;
        top: 0px;
     }
+    .arrayArticle {
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+    .arrayArticle > article:last-child {
+        grid-column: 1/span 2;
+    }
 }
 
 @media only screen and (max-width: 1024px)
@@ -31,6 +38,19 @@
     }
     .arrayGame {
         grid-template-columns: repeat(2,1fr);
+    }
+    .arrayArticle {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,1fr);
+    }
+    .arrayArticle > article {
+        margin-bottom: 50px;
+    }
+    .arrayArticle > article:nth-child(2){
+        grid-row: 2;
+    }
+    .arrayArticle > article:last-child {
+        grid-row: 3;
     }
     #basPage {
         display: flex;
@@ -83,5 +103,9 @@
 {
     .arrayGame {
         grid-template-columns: 1fr;
+    }
+    .arrayArticle > article {
+        width: 50%;
+        justify-self: center;
     }
 }
