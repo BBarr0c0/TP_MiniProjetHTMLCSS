@@ -26,6 +26,7 @@ ul {
     position: fixed;
     background-color: #545454;
     box-shadow: 15px 15px 50px black;
+    z-index: 999; /*calc permettant d'afficher la navbar par dessus les autres éléments*/
 }
 
 #hautPage .logo {
@@ -35,8 +36,7 @@ ul {
 .navbar .menu {
     display: flex;  /*mets les onglets en ligne display: flex;*/
     height: 60px;
-    font-size: 25px;
-    /*z-index: 999;  j'en ai eu besoin a un moment donné va savoir*/
+    font-size: 25px;  
 }
 
 h1 {
@@ -109,7 +109,7 @@ p {
     width: 100%;
     text-align: center;
     justify-content: center;
-    z-index: -1; /*calc permettant au menu déroulant de s'afficher par dessus la vidéo*/
+    /*z-indeX: -1; calc permettant au menu déroulant de s'afficher par dessus la vidéo, plus nécessaire ?*/
 }
 
 .videoplay {
