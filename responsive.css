@@ -71,6 +71,10 @@
         padding-right: 25px;
     }
 
+    .sub-menu {
+        margin-left: -37px;
+    }
+
     .arrayGame {
         grid-template-columns: repeat(2,1fr);
     }
@@ -262,8 +266,17 @@
         margin: 150px 50px;
     }
 
+    .deNous {
+        border: none;
+        padding: 0;
+    }
+
     .imgValues {
         height: 350px;
+    }
+
+    .presentation {
+        border: none;
     }
 
     .imgbj {
@@ -281,6 +294,19 @@
     }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 340px) /*extrêmement important et indispensable*/
+{
+    .scret {
+        display: block;
+        position: relative;
+        text-align: center;
+    }
 
+    .main {
+        margin-top: 0;
+    }
+
+    h2, p, .video, .bestGame, .bestArticle, header, footer, section, article, form {
+        display: none;
+    }
 }

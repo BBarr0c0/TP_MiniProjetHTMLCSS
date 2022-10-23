@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" media="screen and (max-width: 340px) " href="responsive.css">
     <link rel="stylesheet" media="screen and (max-width: 860px)" href="responsive.css">
     <link rel="stylesheet" media="screen and (max-width: 1024px)" href="responsive.css">
     <link rel="stylesheet" media="Screen and (max-width: 1480px)" href="responsive.css">
@@ -19,7 +20,7 @@
                     <img src="./image/Actipognon.png" alt="Bonhomme qui marche avec un gros sac plein de pognon" title="Accueil">
                 </a>
             </div>
-            <h1>"Toujours là pour prendre votre pognon"</h1>
+            <h1>"Toujours là pour prendre votre <strong>pognon</strong>"</h1>
             <nav class="navbar">
                 <label for="toggle">&#x2630;</label>  <!--trouver sur https://www.codetable.net/hex/2630 -->
                 <input type="checkbox" id="toggle">
@@ -48,6 +49,9 @@
             </nav>
         </div>
     </header>
+
+    <!--debut page accueil-->
+
     <div class="main">
         <h2>Précommander notre nouvelle usine à biftons :</h2>
         <p class="precoLastGame"><a href="https://store.steampowered.com/app/1938090/Call_of_Duty_Modern_Warfare_II/" target="_blank">Call of Duty: Modern Warfare II</a></p>
@@ -89,8 +93,11 @@
                 </div>
             </div>
         </div>
+        <div class="scret">
+            <img class="imgscret" src="./image/scret.gif" alt="error404">
+        </div>
         <section class="bestArticle">
-            <h2>Nos meilleurs articles :</h2>
+            <h2>Nos derniers articles :</h2>
             <div class="arrayArticle">
                 <article class="art first">
                     <h3>Votre argent, c'est notre argent</h3>
@@ -99,7 +106,7 @@
                 </article>
                 <article class="art second">
                     <h3>Nos microtransaction, notre plus grande fierté</h3>
-                    <p>On adore en mettre partout, ça nous rapporte un max, alors pourquoi s'en priver ? La populace se bataille pour savoir si c'est bien ou mal, pendant qu'on se baigne dans les billets. On achète les politicards pour qu'ils nous laissent arnaquer les gamins et leurs parents, sans parler des dépressifs no life ou mieux encore celui avec un gros égo, ils nous en refilent un max de blé, pour avoir un jolie petit skin virtuel sans aucune valeur mais au moins ils iront se pavaner dans notre jeu buggué pour se la péter.</p>
+                    <p>On adore en mettre partout, ça nous rapporte un max, alors pourquoi s'en priver ? La populace se bataille pour savoir si c'est bien ou mal, pendant qu'on se baigne dans les billets. On achète les politicards pour qu'ils nous laissent arnaquer les gamins et leurs parents, sans parler de ceux en recherche d'attention, ils nous en refilent un max de blé, pour avoir un jolie petit skin virtuel sans aucune valeur mais au moins ils iront se pavaner dans notre jeu buggué pour se la péter.</p>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro laborum ratione nemo beatae? Adipisci ratione magni, vel quisquam incidunt repellendus? Laborum libero dicta aspernatur voluptas assumenda asperiores sequi quasi dolor! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro laborum ratione nemo beatae? Adipisci ratione magni, vel quisquam incidunt repellendus? Laborum libero dicta aspernatur voluptas assumenda asperiores sequi quasi dolor!</p>
                 </article>
                 <article class="art three">
@@ -110,6 +117,9 @@
             </div>
         </section>
     </div>
+
+    <!--fin page accueil-->
+
     <footer>
         <div id="basPage">
             <div class="logoRS">
