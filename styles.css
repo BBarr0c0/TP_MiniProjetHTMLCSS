@@ -57,11 +57,6 @@ h1 {
     animation: devise 10s ease infinite;
 }
 
-h1:hover {
-    color:var(--pognon-color);
-    text-shadow: 5px 5px 25px var(--pognon-color);
-}
-
 .menu a {
     display: block;
     padding: 20px 40px 20px 40px;
