@@ -540,6 +540,19 @@ input[type=checkbox]:checked{
     accent-color: red;
 }
 
+fieldset > label, fieldset > input{
+    width: 200px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 6px;
+    font-style: italic;
+    color: lightgray;
+}
+
+.checkboxText{
+    padding-left: 5vw;
+}
+
 /*-----ANIMATION------*/
 
 @keyframes devise {
